@@ -278,6 +278,8 @@ export default class App extends Component {
             <Text style={styles.textStyle}>{this.state.package}</Text>
             <Text style={styles.textStyle}>{this.state.deviceId}</Text>
             <Text style={styles.textStyle}>{this.state.version}</Text>
+
+            {/* 初始化JPush */}
             <TouchableHighlight
               underlayColor="#0866d9"
               activeOpacity={0.5}
@@ -286,6 +288,8 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>INITPUSH</Text>
             </TouchableHighlight>
+
+            {/* 停止JPush */}
             <TouchableHighlight
               underlayColor="#e4083f"
               activeOpacity={0.5}
@@ -294,6 +298,8 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>STOPPUSH</Text>
             </TouchableHighlight>
+
+            {/* XXXXX */}
             <TouchableHighlight
               underlayColor="#e4083f"
               activeOpacity={0.5}
@@ -302,6 +308,8 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>HasPermission</Text>
             </TouchableHighlight>
+
+            {/* XXXXX */}
             <TouchableHighlight
               underlayColor="#f5a402"
               activeOpacity={0.5}
@@ -310,6 +318,8 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>RESUMEPUSH</Text>
             </TouchableHighlight>
+
+            {/* XXXXX */}
             <TouchableHighlight
               underlayColor="#f5a402"
               activeOpacity={0.5}
@@ -318,6 +328,8 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>GET REGISTRATIONID</Text>
             </TouchableHighlight>
+
+            {/* XXXXX */}
             <TouchableHighlight
               underlayColor="#f5a402"
               activeOpacity={0.5}
@@ -326,8 +338,12 @@ export default class App extends Component {
             >
               <Text style={styles.btnTextStyle}>Go to SecondActivity</Text>
             </TouchableHighlight>
+
+            {/* 推送消息、注册ID */}
             <Text style={styles.textStyle}>{this.state.pushMsg}</Text>
             <Text style={styles.textStyle}>{this.state.registrationId}</Text>
+
+            {/* XXXXX */}
             <View style={styles.title}>
               <Text style={styles.titleText}>设置Tag和Alias</Text>
             </View>
