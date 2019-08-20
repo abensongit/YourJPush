@@ -76,6 +76,9 @@ export default class App extends Component {
 
     // 接收推送通知
     this.receiveNotificationListener = (map) => {
+      this.setState({
+        pushMsg: map.aps.alert
+      });
       console.log(`alertContent: ${map.aps.alert}`);
       console.log(`extras: ${map.extras}`);
       Alert.alert('JPush', `alertContent: ${map.aps.alert}`);
