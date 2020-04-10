@@ -302,7 +302,7 @@ export default class App extends Component {
               <Text style={styles.btnTextStyle}>STOPPUSH</Text>
             </TouchableHighlight>
 
-            {/* XXXXX */}
+            {/* 获取应用是否有推送权限 */}
             <TouchableHighlight
               underlayColor="#e4083f"
               activeOpacity={0.5}
